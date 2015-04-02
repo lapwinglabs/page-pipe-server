@@ -4,6 +4,6 @@ Example implementation of a page-pipe server. This will be application specific,
 
 ## Test server-side example
 
-[`GET http://news.lapwinglabs.com/http://en.wikipedia.org/wiki/Sloth`](http://news.lapwinglabs.com/http://news.lapwinglabs.com/http://en.wikipedia.org/wiki/Sloth)
+[`GET http://news.lapwinglabs.com/http://en.wikipedia.org/wiki/Sloth`](http://news.lapwinglabs.com/http://en.wikipedia.org/wiki/Sloth)
 
 If you abuse this endpoint, I will take it down ;-)
