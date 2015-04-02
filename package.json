@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "envvar": "^1.0.0",
+    "is-url": "^1.2.0",
     "localenv": "^0.2.2",
     "node-dev": "^2.6.1",
     "page-pipe": "0.0.1",

@@ -15,6 +15,7 @@ envvar.string('READABILITY_PARSER_KEY');
 var roo = require('roo')(__dirname);
 var Pagepipe = require('page-pipe');
 var port = process.env.PORT || 5000;
+var is_url = require('is-url');
 var throng = require('throng');
 
 /**
@@ -38,13 +39,20 @@ var pagepipe = Pagepipe()
 
 
 /**
+ * Deal with the favicon
+ */
+
+roo.favicon(__dirname + '/public/favicon.ico');
+
+/**
  * /:url
  */
 
 roo.get(/\/(.+)/, function *(next) {
   var url = this.params[0];
-  console.log(url);
-  if (!url) return yield next;
+  if (!url || !is_url(url)) {
+    return yield next;
+  }
 
   // run the page pipe
   // TODO: yieldable
