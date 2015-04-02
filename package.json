@@ -18,6 +18,10 @@
     "test": "make test",
     "start": "make production"
   },
+  "engines": {
+    "node": "0.12.x",
+    "npm": "2.x"
+  },
   "keywords": [
     "server",
     "page",
