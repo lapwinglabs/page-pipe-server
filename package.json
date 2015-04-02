@@ -1,0 +1,28 @@
+{
+  "name": "page-pipe-server",
+  "version": "1.0.0",
+  "description": "Server for page-pipe",
+  "main": "index.js",
+  "dependencies": {
+    "envvar": "^1.0.0",
+    "localenv": "^0.2.2",
+    "node-dev": "^2.6.1",
+    "page-pipe": "0.0.1",
+    "roo": "^0.2.0",
+    "superagent": "^1.1.0",
+    "throng": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "make test",
+    "start": "make production"
+  },
+  "keywords": [
+    "server",
+    "page",
+    "meta",
+    "sentiment"
+  ],
+  "author": "Lapwing Labs",
+  "license": "MIT"
+}
