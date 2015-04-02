@@ -8,7 +8,7 @@
     "is-url": "^1.2.0",
     "localenv": "^0.2.2",
     "node-dev": "^2.6.1",
-    "page-pipe": "0.x",
+    "page-pipe": "0.0.2",
     "roo": "^0.2.0",
     "superagent": "^1.1.0",
     "throng": "^1.0.0"
