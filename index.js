@@ -7,6 +7,7 @@ require('localenv');
 var envvar = require('envvar');
 envvar.string('ALCHEMY_KEY');
 envvar.string('READABILITY_PARSER_KEY');
+envvar.string('TIKA_SERVER');
 
 /**
  * Module Dependencies
@@ -35,7 +36,7 @@ var tika = require('page-pipe/plugins/tika');
 var pagepipe = Pagepipe()
   .use(alchemy({ key: process.env.ALCHEMY_KEY }))
   .use(readability({ key: process.env.READABILITY_PARSER_KEY }))
-  .use(tika());
+  .use(tika({ url: process.env.TIKA_SERVER }));
 
 
 /**
